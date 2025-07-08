@@ -10,6 +10,7 @@
 <body>
     <header class="hero-section">
         <div class="container">
+            <img src="images/app-logo.png" alt="DovmeAI Logo" class="header-logo">
             <h1>İçindeki Sanatçıyı Ortaya Çıkar.</h1>
             <p class="subtitle">Yapay zeka ile benzersiz dövmeler tasarla, AR ile önizle.</p>
             <a href="#" class="btn primary-btn">App Store'dan İndir</a>
@@ -80,12 +81,24 @@
 
     <footer class="footer-section">
         <div class="container">
-            <p>&copy; 2025 DovmeAI. Tüm hakları saklıdır.</p>
-            <div class="footer-links">
-                <a href="privacy.html">Gizlilik Politikası</a>
-                <a href="terms.html">Hizmet Şartları</a>
+            <div class="footer-content">
+                <p>&copy; 2025 DovmeAI. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Gizlilik Politikası</a>
+                    <a href="terms.html">Hizmet Şartları</a>
+                    <a href="mailto:destek@dovme.ink">destek@dovme.ink</a>
+                </div>
+                <img src="images/app-logo-dark.png" alt="DovmeAI Logo" class="footer-logo">
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal Structure -->
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
