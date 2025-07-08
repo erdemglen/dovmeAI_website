@@ -11,6 +11,13 @@
     <header class="hero-section">
         <div class="container">
             <img src="images/app-logo.png" alt="DovmeAI Logo" class="header-logo">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="terms.html">Hizmet Şartları</a></li>
+                    <li><a href="privacy.html">Gizlilik Politikası</a></li>
+                </ul>
+            </nav>
             <h1>İçindeki Sanatçıyı Ortaya Çıkar.</h1>
             <p class="subtitle">Yapay zeka ile benzersiz dövmeler tasarla, AR ile önizle.</p>
             <a href="#" class="btn primary-btn">App Store'dan İndir</a>
@@ -22,17 +29,17 @@
             <div class="container">
                 <h2>İlham Veren Özellikler</h2>
                 <div class="feature-grid">
-                    <div class="feature-item">
+                    <div class="feature-item" data-images="images/ai-design.png,images/AI2.png,images/AI3.png,images/AI4.png">
                         <img src="images/ai-design.png" alt="AI Design Icon">
                         <h3>Yapay Zeka Destekli Tasarım</h3>
-                        <p>Gelişmiş yapay zeka ile fikirlerini saniyeler içinde çarpıcı dövme tasarımlarına dönüştür.</p>
+                        <p>Gelişmiş yapay zekamız ile fikirlerini saniyeler içinde çarpıcı dövme tasarımlarına dönüştür.</p>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-images="images/ar-preview.png,images/ar2.png,images/ar3.png,images/ar4.png">
                         <img src="images/ar-preview.png" alt="AR Preview Icon">
                         <h3>Artırılmış Gerçeklik Önizlemesi</h3>
                         <p>Son teknoloji AR ile dövmenin teninde nasıl durduğunu yaptırmadan önce gör.</p>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-images="images/gallery.png,images/galeri2.png,images/galeri3.png,images/galeri4.png">
                         <img src="images/gallery.png" alt="Gallery Icon">
                         <h3>Kişiselleştirilmiş Galeri</h3>
                         <p>Favori tasarımlarını özel, güvenli galerinde kaydet, düzenle ve tekrar ziyaret et.</p>
@@ -95,8 +102,12 @@
 
     <!-- Image Modal Structure -->
     <div id="imageModal" class="modal">
-        <span class="close-button">&times;</span>
-        <img class="modal-content" id="modalImage">
+        <div class="modal-content-wrapper">
+            <span class="close-button">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <a class="prev-btn">&#10094;</a>
+            <a class="next-btn">&#10095;</a>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
