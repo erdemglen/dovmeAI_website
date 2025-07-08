@@ -1,0 +1,249 @@
+/* General Styles */
+:root {
+    --primary-color: #3498db; /* A vibrant blue */
+    --secondary-color: #2c3e50; /* Darker blue/grey for text */
+    --accent-color: #e74c3c; /* A strong accent red */
+    --light-bg: #f8f8f8;
+    --dark-bg: #1a1a1a;
+    --text-light: #ecf0f1;
+    --text-dark: #34495e;
+    --border-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    color: var(--text-light);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 2px solid var(--primary-color);
+}
+
+.primary-btn:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: var(--text-light);
+    padding: 8rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* Features Section */
+.features-section {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--light-bg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    padding: 4rem 1rem;
+    background-color: var(--light-bg);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step-item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.step-item span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.cta-section h2 {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* Text Sections (Privacy Policy, Terms of Service) */
+.text-section {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.text-section h2 {
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.text-section h3 {
+    text-align: left;
+    color: var(--primary-color);
+    margin-top: 2rem;
+}
+
+.text-section ul {
+    list-style: disc inside;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer-section {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-section .footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 0.8rem;
+}
+
+.footer-section .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        padding: 6rem 1rem;
+    }
+
+    .feature-grid, .steps-grid {
+        grid-template-columns: 1fr;
+    }
+}
